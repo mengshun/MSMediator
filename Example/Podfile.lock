@@ -1,0 +1,16 @@
+PODS:
+  - MSMediator (0.1.2)
+
+DEPENDENCIES:
+  - MSMediator (from `../`)
+
+EXTERNAL SOURCES:
+  MSMediator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MSMediator: 811a32055bf91ee1aaf0f3d1919d7250c2696518
+
+PODFILE CHECKSUM: 7c2d18627310ac11f9bc089370447a64fd7c47cd
+
+COCOAPODS: 1.11.3

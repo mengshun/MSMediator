@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		228C8FB4265CD42B002B6F7B /* MSMediator+A.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FB3265CD42B002B6F7B /* MSMediator+A.m */; };
+		228C8FB7265CD43C002B6F7B /* MSMediator+B.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FB6265CD43C002B6F7B /* MSMediator+B.m */; };
+		228C8FBB265CD49D002B6F7B /* DJT_A.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FBA265CD49D002B6F7B /* DJT_A.m */; };
+		228C8FBE265CD4B8002B6F7B /* DJT_B.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FBD265CD4B8002B6F7B /* DJT_B.m */; };
+		228C8FC1265CD4CB002B6F7B /* DJT_Default.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FC0265CD4CB002B6F7B /* DJT_Default.m */; };
+		228C8FC4265CD4DB002B6F7B /* DJT_NoTargetAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FC3265CD4DB002B6F7B /* DJT_NoTargetAction.m */; };
+		228C8FD5265CD926002B6F7B /* DJAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FD4265CD926002B6F7B /* DJAViewController.m */; };
+		228C8FD8265CD937002B6F7B /* DJBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FD7265CD937002B6F7B /* DJBViewController.m */; };
+		228C8FDC265CDF6E002B6F7B /* MSMediator+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FDB265CDF6E002B6F7B /* MSMediator+Default.m */; };
+		228C8FE0265CEF4D002B6F7B /* DJLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FDF265CEF4D002B6F7B /* DJLoginViewController.swift */; };
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
+		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		6003F59E195388D20070C39A /* DJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* DJAppDelegate.m */; };
+		6003F5A7195388D20070C39A /* DJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* DJViewController.m */; };
+		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		D3D4834624C8E95A1057F697 /* Pods_MSMediator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E62C1E2133A36AA1DEB172 /* Pods_MSMediator_Example.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DBC07DDA690E9771FBEF4AE /* Pods-MSMediator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSMediator_Example.release.xcconfig"; path = "Target Support Files/Pods-MSMediator_Example/Pods-MSMediator_Example.release.xcconfig"; sourceTree = "<group>"; };
+		11B8956FD6FBE4E2F249CA95 /* Pods-MSMediator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSMediator_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MSMediator_Tests/Pods-MSMediator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		228C8FB2265CD42B002B6F7B /* MSMediator+A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSMediator+A.h"; sourceTree = "<group>"; };
+		228C8FB3265CD42B002B6F7B /* MSMediator+A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MSMediator+A.m"; sourceTree = "<group>"; };
+		228C8FB5265CD43C002B6F7B /* MSMediator+B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSMediator+B.h"; sourceTree = "<group>"; };
+		228C8FB6265CD43C002B6F7B /* MSMediator+B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MSMediator+B.m"; sourceTree = "<group>"; };
+		228C8FB9265CD49D002B6F7B /* DJT_A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJT_A.h; sourceTree = "<group>"; };
+		228C8FBA265CD49D002B6F7B /* DJT_A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJT_A.m; sourceTree = "<group>"; };
+		228C8FBC265CD4B8002B6F7B /* DJT_B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJT_B.h; sourceTree = "<group>"; };
+		228C8FBD265CD4B8002B6F7B /* DJT_B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJT_B.m; sourceTree = "<group>"; };
+		228C8FBF265CD4CB002B6F7B /* DJT_Default.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJT_Default.h; sourceTree = "<group>"; };
+		228C8FC0265CD4CB002B6F7B /* DJT_Default.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJT_Default.m; sourceTree = "<group>"; };
+		228C8FC2265CD4DB002B6F7B /* DJT_NoTargetAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJT_NoTargetAction.h; sourceTree = "<group>"; };
+		228C8FC3265CD4DB002B6F7B /* DJT_NoTargetAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJT_NoTargetAction.m; sourceTree = "<group>"; };
+		228C8FD2265CD6E5002B6F7B /* DJRouterHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJRouterHeader.h; sourceTree = "<group>"; };
+		228C8FD3265CD926002B6F7B /* DJAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJAViewController.h; sourceTree = "<group>"; };
+		228C8FD4265CD926002B6F7B /* DJAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJAViewController.m; sourceTree = "<group>"; };
+		228C8FD6265CD937002B6F7B /* DJBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJBViewController.h; sourceTree = "<group>"; };
+		228C8FD7265CD937002B6F7B /* DJBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJBViewController.m; sourceTree = "<group>"; };
+		228C8FDA265CDF6E002B6F7B /* MSMediator+Default.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSMediator+Default.h"; sourceTree = "<group>"; };
+		228C8FDB265CDF6E002B6F7B /* MSMediator+Default.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MSMediator+Default.m"; sourceTree = "<group>"; };
+		228C8FDE265CEF4A002B6F7B /* MSMediator_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSMediator_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		228C8FDF265CEF4D002B6F7B /* DJLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJLoginViewController.swift; sourceTree = "<group>"; };
+		287D39AF1B266825456574CA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4C4998AA0C4A6D1747CDC81D /* Pods-MSMediator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSMediator_Tests.release.xcconfig"; path = "Target Support Files/Pods-MSMediator_Tests/Pods-MSMediator_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		57E62C1E2133A36AA1DEB172 /* Pods_MSMediator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSMediator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59121172DF6CB90FEE926C5E /* Pods-MSMediator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSMediator_Example.debug.xcconfig"; path = "Target Support Files/Pods-MSMediator_Example/Pods-MSMediator_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* MSMediator_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSMediator_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F595195388D20070C39A /* MSMediator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MSMediator-Info.plist"; sourceTree = "<group>"; };
+		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* MSMediator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSMediator-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* DJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* DJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJAppDelegate.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* DJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* DJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJViewController.m; sourceTree = "<group>"; };
+		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		6CD91ED3BEFC5B471369810C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5777AE3E826F547F5800871 /* Pods_MSMediator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSMediator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9313735280D68CC00D65475 /* MSMediator.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = MSMediator.podspec; path = ../MSMediator.podspec; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				D3D4834624C8E95A1057F697 /* Pods_MSMediator_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		228C8FC6265CD55E002B6F7B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				228C8FD2265CD6E5002B6F7B /* DJRouterHeader.h */,
+				228C8FD9265CDF53002B6F7B /* Default */,
+				228C8FC9265CD5BD002B6F7B /* ModuleA */,
+				228C8FCA265CD5D6002B6F7B /* ModuleB */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		228C8FC8265CD581002B6F7B /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				228C8FBF265CD4CB002B6F7B /* DJT_Default.h */,
+				228C8FC0265CD4CB002B6F7B /* DJT_Default.m */,
+				228C8FC2265CD4DB002B6F7B /* DJT_NoTargetAction.h */,
+				228C8FC3265CD4DB002B6F7B /* DJT_NoTargetAction.m */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		228C8FC9265CD5BD002B6F7B /* ModuleA */ = {
+			isa = PBXGroup;
+			children = (
+				228C8FB2265CD42B002B6F7B /* MSMediator+A.h */,
+				228C8FB3265CD42B002B6F7B /* MSMediator+A.m */,
+			);
+			path = ModuleA;
+			sourceTree = "<group>";
+		};
+		228C8FCA265CD5D6002B6F7B /* ModuleB */ = {
+			isa = PBXGroup;
+			children = (
+				228C8FB5265CD43C002B6F7B /* MSMediator+B.h */,
+				228C8FB6265CD43C002B6F7B /* MSMediator+B.m */,
+			);
+			path = ModuleB;
+			sourceTree = "<group>";
+		};
+		228C8FCD265CD62E002B6F7B /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				228C8FCE265CD63D002B6F7B /* A */,
+				228C8FCF265CD642002B6F7B /* B */,
+				228C8FC8265CD581002B6F7B /* Default */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		228C8FCE265CD63D002B6F7B /* A */ = {
+			isa = PBXGroup;
+			children = (
+				228C8FD0265CD65F002B6F7B /* Action */,
+				228C8FD3265CD926002B6F7B /* DJAViewController.h */,
+				228C8FD4265CD926002B6F7B /* DJAViewController.m */,
+				228C8FDF265CEF4D002B6F7B /* DJLoginViewController.swift */,
+			);
+			path = A;
+			sourceTree = "<group>";
+		};
+		228C8FCF265CD642002B6F7B /* B */ = {
+			isa = PBXGroup;
+			children = (
+				228C8FD1265CD66A002B6F7B /* Action */,
+				228C8FD6265CD937002B6F7B /* DJBViewController.h */,
+				228C8FD7265CD937002B6F7B /* DJBViewController.m */,
+			);
+			path = B;
+			sourceTree = "<group>";
+		};
+		228C8FD0265CD65F002B6F7B /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				228C8FB9265CD49D002B6F7B /* DJT_A.h */,
+				228C8FBA265CD49D002B6F7B /* DJT_A.m */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		228C8FD1265CD66A002B6F7B /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				228C8FBC265CD4B8002B6F7B /* DJT_B.h */,
+				228C8FBD265CD4B8002B6F7B /* DJT_B.m */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		228C8FD9265CDF53002B6F7B /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				228C8FDA265CDF6E002B6F7B /* MSMediator+Default.h */,
+				228C8FDB265CDF6E002B6F7B /* MSMediator+Default.m */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		49F51B48BE7625240798450A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59121172DF6CB90FEE926C5E /* Pods-MSMediator_Example.debug.xcconfig */,
+				0DBC07DDA690E9771FBEF4AE /* Pods-MSMediator_Example.release.xcconfig */,
+				11B8956FD6FBE4E2F249CA95 /* Pods-MSMediator_Tests.debug.xcconfig */,
+				4C4998AA0C4A6D1747CDC81D /* Pods-MSMediator_Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F593195388D20070C39A /* Example for MSMediator */,
+				6003F5B5195388D20070C39A /* Tests */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				49F51B48BE7625240798450A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58A195388D20070C39A /* MSMediator_Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				57E62C1E2133A36AA1DEB172 /* Pods_MSMediator_Example.framework */,
+				E5777AE3E826F547F5800871 /* Pods_MSMediator_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* Example for MSMediator */ = {
+			isa = PBXGroup;
+			children = (
+				228C8FCD265CD62E002B6F7B /* Business */,
+				228C8FC6265CD55E002B6F7B /* Modules */,
+				6003F59C195388D20070C39A /* DJAppDelegate.h */,
+				6003F59D195388D20070C39A /* DJAppDelegate.m */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				6003F5A5195388D20070C39A /* DJViewController.h */,
+				6003F5A6195388D20070C39A /* DJViewController.m */,
+				228C8FDE265CEF4A002B6F7B /* MSMediator_Example-Bridging-Header.h */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6003F594195388D20070C39A /* Supporting Files */,
+			);
+			name = "Example for MSMediator";
+			path = MSMediator;
+			sourceTree = "<group>";
+		};
+		6003F594195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F595195388D20070C39A /* MSMediator-Info.plist */,
+				6003F596195388D20070C39A /* InfoPlist.strings */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F59B195388D20070C39A /* MSMediator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6003F5B5195388D20070C39A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5BB195388D20070C39A /* Tests.m */,
+				6003F5B6195388D20070C39A /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6003F5B6195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5B7195388D20070C39A /* Tests-Info.plist */,
+				6003F5B8195388D20070C39A /* InfoPlist.strings */,
+				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				F9313735280D68CC00D65475 /* MSMediator.podspec */,
+				6CD91ED3BEFC5B471369810C /* README.md */,
+				287D39AF1B266825456574CA /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6003F589195388D20070C39A /* MSMediator_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "MSMediator_Example" */;
+			buildPhases = (
+				A762FEF353130E56FC9F16D8 /* [CP] Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+				26BFDCF0573254444F6598B8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSMediator_Example;
+			productName = MSMediator;
+			productReference = 6003F58A195388D20070C39A /* MSMediator_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DJ;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = shun.meng;
+				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "MSMediator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F589195388D20070C39A /* MSMediator_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26BFDCF0573254444F6598B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MSMediator_Example/Pods-MSMediator_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MSMediator/MSMediator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MSMediator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MSMediator_Example/Pods-MSMediator_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A762FEF353130E56FC9F16D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MSMediator_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				228C8FBE265CD4B8002B6F7B /* DJT_B.m in Sources */,
+				228C8FBB265CD49D002B6F7B /* DJT_A.m in Sources */,
+				228C8FD8265CD937002B6F7B /* DJBViewController.m in Sources */,
+				228C8FC4265CD4DB002B6F7B /* DJT_NoTargetAction.m in Sources */,
+				228C8FB4265CD42B002B6F7B /* MSMediator+A.m in Sources */,
+				228C8FE0265CEF4D002B6F7B /* DJLoginViewController.swift in Sources */,
+				6003F59E195388D20070C39A /* DJAppDelegate.m in Sources */,
+				228C8FDC265CDF6E002B6F7B /* MSMediator+Default.m in Sources */,
+				6003F5A7195388D20070C39A /* DJViewController.m in Sources */,
+				228C8FB7265CD43C002B6F7B /* MSMediator+B.m in Sources */,
+				228C8FC1265CD4CB002B6F7B /* DJT_Default.m in Sources */,
+				228C8FD5265CD926002B6F7B /* DJAViewController.m in Sources */,
+				6003F59A195388D20070C39A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F597195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F5B9195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71719F9E1E33DC2100824A3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59121172DF6CB90FEE926C5E /* Pods-MSMediator_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSMediator/MSMediator-Prefix.pch";
+				INFOPLIST_FILE = "MSMediator/MSMediator-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.MSMediator-Example";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MSMediator/MSMediator_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DBC07DDA690E9771FBEF4AE /* Pods-MSMediator_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSMediator/MSMediator-Prefix.pch";
+				INFOPLIST_FILE = "MSMediator/MSMediator-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.MSMediator-Example";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MSMediator/MSMediator_Example-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "MSMediator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "MSMediator_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}

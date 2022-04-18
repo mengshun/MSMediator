@@ -1,0 +1,22 @@
+{
+  "name": "MSMediator",
+  "version": "0.1.2",
+  "summary": "MSMediator 是 Router 基础库",
+  "description": "0.1.0 中间组件创建, 添加URL扩展, 添加Target规则及支持只有host无path调用\n0.1.1 添加手动创建规则 分类\n0.1.2 fix 通过URL分类添加 arry, dict 参数时 issue",
+  "homepage": "https://github.com/mengshun/MSMediator",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "shun.meng": "892445213@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/mengshun/MSMediator.git",
+    "tag": "0.1.2"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "MSMediator/Classes/**/*"
+}

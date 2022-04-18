@@ -1,0 +1,6 @@
+framework module MSMediator {
+  umbrella header "MSMediator-umbrella.h"
+
+  export *
+  module * { export * }
+}
