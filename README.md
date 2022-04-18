@@ -22,7 +22,7 @@ pod 'MSMediator'
 
 ## Author
 
-shun.meng, mengshun@dejiplaza.com
+shun.meng, 892445213@qq.com
 
 ## License
 

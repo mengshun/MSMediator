@@ -1,5 +1,5 @@
 //
-//  DJT_A.h
+//  MST_A.h
 //  MSMediator_Example
 //
 //  Created by Mengshun on 2021/5/25.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DJT_A : NSObject
+@interface MST_A : NSObject
 
 @end

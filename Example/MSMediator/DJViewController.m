@@ -51,50 +51,50 @@
     switch (indexPath.row) {
         case 0:
         {
-            vc = [DJ() aDetailVC:nil];
+            vc = [MS() aDetailVC:nil];
         }
             break;
         case 1:
         {
-            vc = [DJ() bDetailVCTitle:@"设置标题" prdId:@"ABC" params:nil];
+            vc = [MS() bDetailVCTitle:@"设置标题" prdId:@"ABC" params:nil];
         }
             break;
         case 2:
         {
-            vc = [DJ() performActionWithUrl:[NSURL URLWithString:@"dj://a/detail"] completion:nil];
+            vc = [MS() performActionWithUrl:[NSURL URLWithString:@"dj://a/detail"] completion:nil];
         }
             break;
         case 3:
         {
             NSString *jumpUrl = @"dj://b/detail?title=改变标题了&prdId=1234";
-            vc = [DJ() performActionWithUrl:[jumpUrl dj_URL] completion:nil];
+            vc = [MS() performActionWithUrl:[jumpUrl ms_URL] completion:nil];
         }
             break;
         case 4:
         {
-            [DJ() login];
+            [MS() login];
         }
             break;
         case 5:
         {
-            [DJ() login:^{
+            [MS() login:^{
                 NSLog(@"收到登录成功了");
             }];
         }
             break;
         case 6:
         {
-            [DJ() jumpWithURLString:@"dj://login" params:nil];
+            [MS() jumpWithURLString:@"dj://login" params:nil];
         }
             break;
         case 7:
         {
-            [DJ() performActionWithUrl:[@"dj://login1" dj_URL] completion:nil];
+            [MS() performActionWithUrl:[@"dj://login1" ms_URL] completion:nil];
         }
             break;
         case 8:
         {
-            [DJ() performActionWithUrl:[@"dj://c/go" dj_URL] completion:nil];
+            [MS() performActionWithUrl:[@"dj://c/go" ms_URL] completion:nil];
         }
             break;
         default:

@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		0FBC138B5CE50FF3DB5D726DBD59085B /* Pods-MSMediator_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSMediator_Example-Info.plist"; sourceTree = "<group>"; };
 		13C9D7CC4D710BBFF41D0DFBE70C647A /* MSMediator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSMediator.debug.xcconfig; sourceTree = "<group>"; };
-		1BDF1667E8C758B6B7C0220B6BB44CCE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1BDF1667E8C758B6B7C0220B6BB44CCE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		24F70415D4700EB4ABB4FEE58B0D890F /* MSMediator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSMediator.m; path = MSMediator/Classes/MSMediator.m; sourceTree = "<group>"; };
 		2DC75BB9041EF44176AB92511ECEC001 /* MSMediator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MSMediator-Info.plist"; sourceTree = "<group>"; };
 		3C2BA22D6E4795D0A7D237F496FA1018 /* Pods-MSMediator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSMediator_Example-dummy.m"; sourceTree = "<group>"; };
@@ -43,14 +43,14 @@
 		7C4F65DCA13FA6FDEE27BFD4C9CD9A50 /* Pods-MSMediator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MSMediator_Example.modulemap"; sourceTree = "<group>"; };
 		8003FF4B8EA40245A23B0EED96F0D464 /* MSMediator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSMediator.release.xcconfig; sourceTree = "<group>"; };
 		8F2D6693336FA08FD8D9011C267D745F /* Pods-MSMediator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSMediator_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A4D0BBE4F9199C4E91EEA874692924C8 /* Pods-MSMediator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MSMediator_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A8C0392F51445F1FDBD62922F5352A8C /* Pods-MSMediator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSMediator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		AA414D281D3F714288F56CF2DC6FC3AA /* Pods-MSMediator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MSMediator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BEDF38F6C0CBC9F3C6623EABDD4AF2EA /* MSMediator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MSMediator.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BEDF38F6C0CBC9F3C6623EABDD4AF2EA /* MSMediator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MSMediator.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		C927DE8033B683768BB14AC7866D80FA /* MSMediator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSMediator.h; path = MSMediator/Classes/MSMediator.h; sourceTree = "<group>"; };
 		DE102A61509C253D10309F2488C5709D /* MSMediator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MSMediator.modulemap; sourceTree = "<group>"; };
-		E414D474DF4E0F266BA45B19AE9953F3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E414D474DF4E0F266BA45B19AE9953F3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EF4558F69FD7066B75AAFEC94909596A /* MSMediator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSMediator-prefix.pch"; sourceTree = "<group>"; };
 		F8A7C5C2956F608B474CD37634BF7152 /* MSMediator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSMediator-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -531,8 +531,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

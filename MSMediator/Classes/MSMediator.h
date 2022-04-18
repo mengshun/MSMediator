@@ -16,8 +16,11 @@ typedef id _Nullable(^MSMediatorBeforeInvokeBlock)(NSDictionary *_Nullable param
 
 + (instancetype _Nonnull)sharedInstance;
 
-/// 设置默认的 swift module name
-- (void)initSetupDefaultSwiftTargetModuleName:(NSString *_Nonnull)moduleName;
+/// 设置默认的参数
+/// @param moduleName swift module name
+/// @param prefix  Target 和 Action 前缀, 如果设置MS, 则target前缀为 MST, Action前缀为 MSA
+- (void)initSetupDefaultSwiftTargetModuleName:(NSString *_Nonnull)moduleName
+                                       prefix:(NSString *_Nonnull)prefix;
 
 /// 远程App调用入口
 - (id _Nullable)performActionWithUrl:(NSURL * _Nullable)url completion:(void(^_Nullable)(NSDictionary * _Nullable info))completion;
@@ -43,7 +46,7 @@ typedef id _Nullable(^MSMediatorBeforeInvokeBlock)(NSDictionary *_Nullable param
 @interface NSString (MSMediator)
 
 /// 将字符串转为URL，如果url含有汉字等转义字符则编码一次
-- (NSURL * _Nullable)dj_URL;
+- (NSURL * _Nullable)ms_URL;
 
 @end
 
@@ -51,14 +54,14 @@ typedef id _Nullable(^MSMediatorBeforeInvokeBlock)(NSDictionary *_Nullable param
 @interface NSURL (MSMediator)
 
 /// URL 中的 query items
-- (NSDictionary *_Nonnull)dj_queryParams;
+- (NSDictionary *_Nonnull)ms_queryParams;
 
 /// URL Path 移除所有的 /
-- (NSString *_Nonnull)dj_purePath;
+- (NSString *_Nonnull)ms_purePath;
 
 /// 向URL的 query 中追加参数， 会覆盖原有的重复参数
 /// @param params  参数 dict
-- (NSURL *_Nonnull)dj_addParams:(NSDictionary <NSString *, NSString *>*_Nonnull)params;
+- (NSURL *_Nonnull)ms_addParams:(NSDictionary <NSString *, NSString *>*_Nonnull)params;
 
 @end
 
@@ -82,5 +85,5 @@ typedef NSMutableDictionary * _Nonnull (^MSMediatorParamsSetBlock)(NSString * _N
 
 
 /// 简化调用单例的函数
-MSMediator* _Nonnull DJ(void);
+MSMediator* _Nonnull MS(void);
 

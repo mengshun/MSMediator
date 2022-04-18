@@ -15,7 +15,7 @@
 {
     // Override point for customization after application launch.
     
-    [DJ() initSetupDefaultSwiftTargetModuleName:@"MSMediator_Example"];
+    [MS() initSetupDefaultSwiftTargetModuleName:@"MSMediator_Example" prefix:@"MS"];
     
     NSMutableDictionary *dic = @{}.mutableCopy;
     NSURL *url = dic.scheme(@"deji").host(@"nicai").path(@"home").params(@"a", @"b").umake;

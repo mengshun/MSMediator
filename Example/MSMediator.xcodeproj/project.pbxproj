@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		228C8FB4265CD42B002B6F7B /* MSMediator+A.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FB3265CD42B002B6F7B /* MSMediator+A.m */; };
 		228C8FB7265CD43C002B6F7B /* MSMediator+B.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FB6265CD43C002B6F7B /* MSMediator+B.m */; };
-		228C8FBB265CD49D002B6F7B /* DJT_A.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FBA265CD49D002B6F7B /* DJT_A.m */; };
-		228C8FBE265CD4B8002B6F7B /* DJT_B.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FBD265CD4B8002B6F7B /* DJT_B.m */; };
-		228C8FC1265CD4CB002B6F7B /* DJT_Default.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FC0265CD4CB002B6F7B /* DJT_Default.m */; };
-		228C8FC4265CD4DB002B6F7B /* DJT_NoTargetAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FC3265CD4DB002B6F7B /* DJT_NoTargetAction.m */; };
+		228C8FBB265CD49D002B6F7B /* MST_A.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FBA265CD49D002B6F7B /* MST_A.m */; };
+		228C8FBE265CD4B8002B6F7B /* MST_B.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FBD265CD4B8002B6F7B /* MST_B.m */; };
+		228C8FC1265CD4CB002B6F7B /* MST_Default.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FC0265CD4CB002B6F7B /* MST_Default.m */; };
+		228C8FC4265CD4DB002B6F7B /* MST_NoTargetAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FC3265CD4DB002B6F7B /* MST_NoTargetAction.m */; };
 		228C8FD5265CD926002B6F7B /* DJAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FD4265CD926002B6F7B /* DJAViewController.m */; };
 		228C8FD8265CD937002B6F7B /* DJBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FD7265CD937002B6F7B /* DJBViewController.m */; };
 		228C8FDC265CDF6E002B6F7B /* MSMediator+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C8FDB265CDF6E002B6F7B /* MSMediator+Default.m */; };
@@ -37,14 +37,14 @@
 		228C8FB3265CD42B002B6F7B /* MSMediator+A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MSMediator+A.m"; sourceTree = "<group>"; };
 		228C8FB5265CD43C002B6F7B /* MSMediator+B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSMediator+B.h"; sourceTree = "<group>"; };
 		228C8FB6265CD43C002B6F7B /* MSMediator+B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MSMediator+B.m"; sourceTree = "<group>"; };
-		228C8FB9265CD49D002B6F7B /* DJT_A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJT_A.h; sourceTree = "<group>"; };
-		228C8FBA265CD49D002B6F7B /* DJT_A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJT_A.m; sourceTree = "<group>"; };
-		228C8FBC265CD4B8002B6F7B /* DJT_B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJT_B.h; sourceTree = "<group>"; };
-		228C8FBD265CD4B8002B6F7B /* DJT_B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJT_B.m; sourceTree = "<group>"; };
-		228C8FBF265CD4CB002B6F7B /* DJT_Default.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJT_Default.h; sourceTree = "<group>"; };
-		228C8FC0265CD4CB002B6F7B /* DJT_Default.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJT_Default.m; sourceTree = "<group>"; };
-		228C8FC2265CD4DB002B6F7B /* DJT_NoTargetAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJT_NoTargetAction.h; sourceTree = "<group>"; };
-		228C8FC3265CD4DB002B6F7B /* DJT_NoTargetAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJT_NoTargetAction.m; sourceTree = "<group>"; };
+		228C8FB9265CD49D002B6F7B /* MST_A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MST_A.h; sourceTree = "<group>"; };
+		228C8FBA265CD49D002B6F7B /* MST_A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MST_A.m; sourceTree = "<group>"; };
+		228C8FBC265CD4B8002B6F7B /* MST_B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MST_B.h; sourceTree = "<group>"; };
+		228C8FBD265CD4B8002B6F7B /* MST_B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MST_B.m; sourceTree = "<group>"; };
+		228C8FBF265CD4CB002B6F7B /* MST_Default.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MST_Default.h; sourceTree = "<group>"; };
+		228C8FC0265CD4CB002B6F7B /* MST_Default.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MST_Default.m; sourceTree = "<group>"; };
+		228C8FC2265CD4DB002B6F7B /* MST_NoTargetAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MST_NoTargetAction.h; sourceTree = "<group>"; };
+		228C8FC3265CD4DB002B6F7B /* MST_NoTargetAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MST_NoTargetAction.m; sourceTree = "<group>"; };
 		228C8FD2265CD6E5002B6F7B /* DJRouterHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJRouterHeader.h; sourceTree = "<group>"; };
 		228C8FD3265CD926002B6F7B /* DJAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJAViewController.h; sourceTree = "<group>"; };
 		228C8FD4265CD926002B6F7B /* DJAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJAViewController.m; sourceTree = "<group>"; };
@@ -112,10 +112,10 @@
 		228C8FC8265CD581002B6F7B /* Default */ = {
 			isa = PBXGroup;
 			children = (
-				228C8FBF265CD4CB002B6F7B /* DJT_Default.h */,
-				228C8FC0265CD4CB002B6F7B /* DJT_Default.m */,
-				228C8FC2265CD4DB002B6F7B /* DJT_NoTargetAction.h */,
-				228C8FC3265CD4DB002B6F7B /* DJT_NoTargetAction.m */,
+				228C8FBF265CD4CB002B6F7B /* MST_Default.h */,
+				228C8FC0265CD4CB002B6F7B /* MST_Default.m */,
+				228C8FC2265CD4DB002B6F7B /* MST_NoTargetAction.h */,
+				228C8FC3265CD4DB002B6F7B /* MST_NoTargetAction.m */,
 			);
 			path = Default;
 			sourceTree = "<group>";
@@ -172,8 +172,8 @@
 		228C8FD0265CD65F002B6F7B /* Action */ = {
 			isa = PBXGroup;
 			children = (
-				228C8FB9265CD49D002B6F7B /* DJT_A.h */,
-				228C8FBA265CD49D002B6F7B /* DJT_A.m */,
+				228C8FB9265CD49D002B6F7B /* MST_A.h */,
+				228C8FBA265CD49D002B6F7B /* MST_A.m */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -181,8 +181,8 @@
 		228C8FD1265CD66A002B6F7B /* Action */ = {
 			isa = PBXGroup;
 			children = (
-				228C8FBC265CD4B8002B6F7B /* DJT_B.h */,
-				228C8FBD265CD4B8002B6F7B /* DJT_B.m */,
+				228C8FBC265CD4B8002B6F7B /* MST_B.h */,
+				228C8FBD265CD4B8002B6F7B /* MST_B.m */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -417,17 +417,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				228C8FBE265CD4B8002B6F7B /* DJT_B.m in Sources */,
-				228C8FBB265CD49D002B6F7B /* DJT_A.m in Sources */,
+				228C8FBE265CD4B8002B6F7B /* MST_B.m in Sources */,
+				228C8FBB265CD49D002B6F7B /* MST_A.m in Sources */,
 				228C8FD8265CD937002B6F7B /* DJBViewController.m in Sources */,
-				228C8FC4265CD4DB002B6F7B /* DJT_NoTargetAction.m in Sources */,
+				228C8FC4265CD4DB002B6F7B /* MST_NoTargetAction.m in Sources */,
 				228C8FB4265CD42B002B6F7B /* MSMediator+A.m in Sources */,
 				228C8FE0265CEF4D002B6F7B /* DJLoginViewController.swift in Sources */,
 				6003F59E195388D20070C39A /* DJAppDelegate.m in Sources */,
 				228C8FDC265CDF6E002B6F7B /* MSMediator+Default.m in Sources */,
 				6003F5A7195388D20070C39A /* DJViewController.m in Sources */,
 				228C8FB7265CD43C002B6F7B /* MSMediator+B.m in Sources */,
-				228C8FC1265CD4CB002B6F7B /* DJT_Default.m in Sources */,
+				228C8FC1265CD4CB002B6F7B /* MST_Default.m in Sources */,
 				228C8FD5265CD926002B6F7B /* DJAViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

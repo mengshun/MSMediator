@@ -1,19 +1,19 @@
 //
-//  DJT_B.m
+//  MST_B.m
 //  MSMediator_Example
 //
 //  Created by Mengshun on 2021/5/25.
 //  Copyright © 2021 shun.meng. All rights reserved.
 //
 
-#import "DJT_B.h"
+#import "MST_B.h"
 #import "DJBViewController.h"
 
-@implementation DJT_B
+@implementation MST_B
 
-- (UIViewController *)DJA_detail:(NSDictionary *)params
+- (UIViewController *)MSA_detail:(NSDictionary *)params
 {
-    NSLog(@"[DJT_B] recieve params: %@", params);
+    NSLog(@"[MST_B] recieve params: %@", params);
     DJBViewController *vc = [[DJBViewController alloc] init];
     vc.title = params[@"title"];
     return vc;

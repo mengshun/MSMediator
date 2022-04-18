@@ -1,24 +1,24 @@
 //
-//  DJT_A.m
+//  MST_A.m
 //  MSMediator_Example
 //
 //  Created by Mengshun on 2021/5/25.
 //  Copyright © 2021 shun.meng. All rights reserved.
 //
 
-#import "DJT_A.h"
+#import "MST_A.h"
 #import "DJAViewController.h"
 #import "MSMediator_Example-Swift.h"
 
-@implementation DJT_A
+@implementation MST_A
 
-- (UIViewController *)DJA_detail:(NSDictionary *)params
+- (UIViewController *)MSA_detail:(NSDictionary *)params
 {
-    NSLog(@"[DJT_A] recieve params: %@", params);
+    NSLog(@"[MST_A] recieve params: %@", params);
     return [[DJAViewController alloc] init];
 }
 
-- (void)DJA_login:(NSDictionary *)params
+- (void)MSA_login:(NSDictionary *)params
 {
     void(^block)(void) = params[@"completion"];
     DJLoginViewController *vc = [[DJLoginViewController alloc] init];

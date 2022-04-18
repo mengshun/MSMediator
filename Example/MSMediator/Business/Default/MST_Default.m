@@ -1,18 +1,18 @@
 //
-//  DJT_Default.m
+//  MST_Default.m
 //  MSMediator_Example
 //
 //  Created by Mengshun on 2021/5/25.
 //  Copyright © 2021 shun.meng. All rights reserved.
 //
 
-#import "DJT_Default.h"
+#import "MST_Default.h"
 
 #import "MSMediator_Example-Swift.h"
 
-@implementation DJT_Default
+@implementation MST_Default
 
-- (void)DJA_login:(NSDictionary *)params
+- (void)MSA_login:(NSDictionary *)params
 {
     void(^block)(void) = params[@"completion"];
     DJLoginViewController *vc = [[DJLoginViewController alloc] init];

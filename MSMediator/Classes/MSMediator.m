@@ -16,6 +16,7 @@ NSString * const kMSMediatorKeySwiftTargetModuleName = @"kMSMediatorKeySwiftTarg
 
 @property (strong, nonatomic) NSMutableDictionary *cachedTarget;
 @property (copy, nonatomic) NSString *defaultSwiftModuleName;
+@property (copy, nonatomic) NSString *defaultPrefix;
 @property (strong, nonatomic) MSMediatorBeforeInvokeBlock beforeInvokeBlock;
 @property (strong, nonatomic) MSMediatorBeforeFinishBlock beforeFinishBlock;
 
@@ -35,9 +36,10 @@ NSString * const kMSMediatorKeySwiftTargetModuleName = @"kMSMediatorKeySwiftTarg
     return mediator;
 }
 
-- (void)initSetupDefaultSwiftTargetModuleName:(NSString *)moduleName
+- (void)initSetupDefaultSwiftTargetModuleName:(NSString *)moduleName prefix:(NSString * _Nonnull)prefix
 {
     self.defaultSwiftModuleName = moduleName;
+    self.defaultPrefix = prefix;
 }
 
 /*
@@ -103,9 +105,9 @@ NSString * const kMSMediatorKeySwiftTargetModuleName = @"kMSMediatorKeySwiftTarg
     // generate target
     NSString *targetClassString = nil;
     if (swiftModuleName.length > 0) {
-        targetClassString = [NSString stringWithFormat:@"%@.DJT%@", swiftModuleName, targetName];
+        targetClassString = [NSString stringWithFormat:@"%@.%@T%@", swiftModuleName, self.defaultPrefix, targetName];
     } else {
-        targetClassString = [NSString stringWithFormat:@"DJT_%@", targetName];
+        targetClassString = [NSString stringWithFormat:@"%@T_%@", self.defaultPrefix, targetName];
     }
     NSObject *target = [self safeFetchCachedTarget:targetClassString];
     if (target == nil) {
@@ -115,13 +117,13 @@ NSString * const kMSMediatorKeySwiftTargetModuleName = @"kMSMediatorKeySwiftTarg
     
     if (target == nil
         && self.defaultSwiftModuleName) {
-        targetClassString = [NSString stringWithFormat:@"%@.DJT%@", self.defaultSwiftModuleName, targetName];
+        targetClassString = [NSString stringWithFormat:@"%@.%@T%@", self.defaultSwiftModuleName, self.defaultPrefix, targetName];
         Class targetClass = NSClassFromString(targetClassString);
         target = [[targetClass alloc] init];
     }
 
     // generate action
-    NSString *actionString = [NSString stringWithFormat:@"DJA_%@:", actionName];
+    NSString *actionString = [NSString stringWithFormat:@"%@A_%@:", self.defaultPrefix, actionName];
     SEL action = NSSelectorFromString(actionString);
     
     if (target == nil) {
@@ -188,8 +190,8 @@ NSString * const kMSMediatorKeySwiftTargetModuleName = @"kMSMediatorKeySwiftTarg
 
 - (id)defaultTargetAction:(NSString *)actionName params:(NSDictionary *)params
 {
-    NSString *defaultTarget = @"DJT_Default";
-    NSString *actionString = [NSString stringWithFormat:@"DJA_%@:", actionName];
+    NSString *defaultTarget = [NSString stringWithFormat:@"%@T_Default", self.defaultPrefix];
+    NSString *actionString = [NSString stringWithFormat:@"%@A_%@:", self.defaultPrefix, actionName];
     NSObject *target = [[NSClassFromString(defaultTarget) alloc] init];
     SEL action = NSSelectorFromString(actionString);
     if ([target respondsToSelector:action]) {
@@ -202,8 +204,8 @@ NSString * const kMSMediatorKeySwiftTargetModuleName = @"kMSMediatorKeySwiftTarg
 
 - (void)NoTargetActionResponseWithTargetString:(NSString *)targetString selectorString:(NSString *)selectorString originParams:(NSDictionary *)originParams
 {
-    SEL action = NSSelectorFromString(@"DJA_response:");
-    NSObject *target = [[NSClassFromString(@"DJT_NoTargetAction") alloc] init];
+    SEL action = NSSelectorFromString([NSString stringWithFormat:@"%@A_response:", self.defaultPrefix]);
+    NSObject *target = [[NSClassFromString([NSString stringWithFormat:@"%@T_NoTargetAction", self.defaultPrefix]) alloc] init];
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     params[@"originParams"] = originParams;
@@ -318,7 +320,7 @@ NSString * const kMSMediatorKeySwiftTargetModuleName = @"kMSMediatorKeySwiftTarg
 
 @implementation NSString (MSMediator)
 
-- (NSURL *)dj_URL
+- (NSURL *)ms_URL
 {
     NSURL *res = [NSURL URLWithString:self];
     if (!res) {
@@ -336,7 +338,7 @@ NSString * const kMSMediatorKeySwiftTargetModuleName = @"kMSMediatorKeySwiftTarg
 
 @implementation NSURL (MSMediator)
 
-- (NSDictionary *)dj_queryParams {
+- (NSDictionary *)ms_queryParams {
     NSURLComponents *coms = [NSURLComponents componentsWithURL:self resolvingAgainstBaseURL:NO];
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     if (coms.queryItems.count) {
@@ -347,14 +349,14 @@ NSString * const kMSMediatorKeySwiftTargetModuleName = @"kMSMediatorKeySwiftTarg
     return dict;
 }
 
-- (NSString *)dj_purePath {
+- (NSString *)ms_purePath {
     NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"/"];
     return [self.path stringByTrimmingCharactersInSet:set];
 }
 
-- (NSURL *_Nonnull)dj_addParams:(NSDictionary <NSString *, NSString *>*_Nonnull)params
+- (NSURL *_Nonnull)ms_addParams:(NSDictionary <NSString *, NSString *>*_Nonnull)params
 {
-    NSMutableDictionary *resParams = [NSMutableDictionary dictionaryWithDictionary:[self dj_queryParams]];
+    NSMutableDictionary *resParams = [NSMutableDictionary dictionaryWithDictionary:[self ms_queryParams]];
     [resParams addEntriesFromDictionary:params];
     NSURLComponents *coms = [NSURLComponents componentsWithURL:self resolvingAgainstBaseURL:NO];
     NSMutableArray <NSURLQueryItem *>* items = @[].mutableCopy;
@@ -385,15 +387,15 @@ NSString * const kMSMediatorKeySwiftTargetModuleName = @"kMSMediatorKeySwiftTarg
 
 @implementation NSMutableDictionary (MSMediator)
 
-static NSString *const _scheme_dj_ = @"_scheme_dj_";
-static NSString *const _host_dj_ = @"_host_dj_";
-static NSString *const _path_dj_ = @"_path_dj_";
-static NSArray *_dj_url_components_key_array_ = nil;
+static NSString *const _scheme_ms_ = @"_scheme_ms_";
+static NSString *const _host_ms_ = @"_host_ms_";
+static NSString *const _path_ms_ = @"_path_ms_";
+static NSArray *_ms_url_components_key_array_ = nil;
 
 + (void)load
 {
-    if (!_dj_url_components_key_array_) {
-        _dj_url_components_key_array_ = @[_scheme_dj_, _host_dj_, _path_dj_];
+    if (!_ms_url_components_key_array_) {
+        _ms_url_components_key_array_ = @[_scheme_ms_, _host_ms_, _path_ms_];
     }
 }
 
@@ -401,7 +403,7 @@ static NSArray *_dj_url_components_key_array_ = nil;
     return ^(NSString *value){
         NSParameterAssert([value isKindOfClass:NSString.class]);
         if ([value isKindOfClass:NSString.class]) {
-            self[_scheme_dj_] = value;
+            self[_scheme_ms_] = value;
         }
         return self;
     };
@@ -411,7 +413,7 @@ static NSArray *_dj_url_components_key_array_ = nil;
     return ^(NSString *value){
         NSParameterAssert([value isKindOfClass:NSString.class]);
         if ([value isKindOfClass:NSString.class]) {
-            self[_host_dj_] = value;
+            self[_host_ms_] = value;
         }
         return self;
     };
@@ -421,7 +423,7 @@ static NSArray *_dj_url_components_key_array_ = nil;
     return ^(NSString *value){
         NSParameterAssert([value isKindOfClass:NSString.class]);
         if ([value isKindOfClass:NSString.class]) {
-            self[_path_dj_] = value;
+            self[_path_ms_] = value;
         }
         return self;
     };
@@ -439,17 +441,17 @@ static NSArray *_dj_url_components_key_array_ = nil;
 }
 
 - (NSURL *)umake {
-    NSParameterAssert(self[_scheme_dj_]);
-    NSParameterAssert(self[_host_dj_]);
-    if (self[_scheme_dj_] && self[_host_dj_]) {
+    NSParameterAssert(self[_scheme_ms_]);
+    NSParameterAssert(self[_host_ms_]);
+    if (self[_scheme_ms_] && self[_host_ms_]) {
         NSURLComponents *coms = [NSURLComponents new];
-        coms.scheme = self[_scheme_dj_];
-        coms.host = self[_host_dj_];
-        coms.path = [self[_path_dj_] hasPrefix:@"/"] ? self[_path_dj_] : [@"/" stringByAppendingString:self[_path_dj_]];
+        coms.scheme = self[_scheme_ms_];
+        coms.host = self[_host_ms_];
+        coms.path = [self[_path_ms_] hasPrefix:@"/"] ? self[_path_ms_] : [@"/" stringByAppendingString:self[_path_ms_]];
         if (self.count) {
             NSMutableArray *queryItems = [NSMutableArray array];
             [self.copy enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-                if (![_dj_url_components_key_array_ containsObject:key]) {
+                if (![_ms_url_components_key_array_ containsObject:key]) {
                     NSURLQueryItem *item = [NSURLQueryItem queryItemWithName:key value:obj];
                     [queryItems addObject:item];
                 }
@@ -464,6 +466,6 @@ static NSArray *_dj_url_components_key_array_ = nil;
 @end
 
 
-MSMediator* _Nonnull DJ(void){
+MSMediator* _Nonnull MS(void){
     return [MSMediator sharedInstance];
 };

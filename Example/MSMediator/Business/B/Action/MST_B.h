@@ -1,5 +1,5 @@
 //
-//  DJT_Default.h
+//  MST_B.h
 //  MSMediator_Example
 //
 //  Created by Mengshun on 2021/5/25.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DJT_Default : NSObject
+@interface MST_B : NSObject
 
 @end
 
